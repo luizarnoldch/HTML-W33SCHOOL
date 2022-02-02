@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen</title>
+</head>
+<body>
+    <p><img src="dota2.jpg" alt="dota2" width="140" height="140">Imagen en parrafo</p>
+
+    <p>Imagen mapeada atributos "img" + "map"("area")</p>
+    <p><img src="dota2.jpg" alt="dota2" width="140" height="140" usemap="#workmap"></p>
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="http://www.facebook.com">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="http://www.facebook.com">
+        <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="http://www.facebook.com">
+    </map>
+
+    <p>Imagen que cambia al cambio de la ventana "img" + "picture"("source")</p>
+    <picture>
+        <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+        <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+        <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+</body>
+</html>
